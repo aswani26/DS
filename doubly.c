@@ -41,6 +41,7 @@ case 5:exit(0);
 }
 }
 }
+//function to insert
 struct node*insert(struct node*s,int data)
 {
 struct node*t;
@@ -61,12 +62,14 @@ s=s->right;
 }
 return;
 }
+//function to search
 struct node*search(struct node*s,int data)
 {
 while(s!=0 && data!=s->data)
 s=s->right;
 return s;
 }
+//function to delete
 struct node*delete(struct node*s,int data)
 {
 struct node*t;
