@@ -22,6 +22,7 @@ printdata(arr2,n2);
 printf("\n merged array:");
 printdata(arr3,n1+n2);
 }
+//function for read data to array
 void readdata(int a[],int n)
 {
 int i;
@@ -31,7 +32,7 @@ scanf("%d",&a[i]);
 }
 return;
 }
-
+//function for print data 
 void printdata(int a[],int n)
 {
 int i;
@@ -39,7 +40,7 @@ for(i=0;i<n;i++)
 printf("%d  ",a[i]);
 return;
 }
-
+//function for sort data in array
 void sortdata(int a[],int n)
 {
 int i,j,temp;
@@ -52,7 +53,7 @@ a[i]=temp;
 return;
 }
 }
-
+//function for merge  2 arrays
 void mergedata(int a[],int b[],int c[],int n1,int n2)
 {
 int i,j,k;
