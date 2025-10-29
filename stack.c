@@ -40,6 +40,7 @@ case 5:exit(0);
 }
 }
 }
+//function to insert
 struct node* push(struct node*list,int data)
 {
 struct node*t;
@@ -49,6 +50,7 @@ t->next=list;
 list=t;
 return list;
 }
+//function to delete a node
 struct node*pop (struct node*list)
 {
 struct node*t=list;
@@ -62,6 +64,7 @@ else
 printf("list is empty");
 return list;
 }
+//function to display
 void display(struct node*list)
 {
 while(list !=NULL)
@@ -71,6 +74,7 @@ list=list->next;
 }
 printf("\n");
 }
+//function to search
 int search(struct node*list,int item)
 {
 while(list !=NULL)
