@@ -37,6 +37,7 @@ case 5:exit(0);
 }
 }
 }
+//function to insert
 void enque(int data)
 {
 int r1;
@@ -50,6 +51,7 @@ que[rear]=data;
 }
 return;
 }
+//function to delete
 int deque()
 {
 if(front==rear)
@@ -62,6 +64,7 @@ else
 front=(front+1)%SIZE;
 return que[front];
 }}
+//function to display
 void display()
 {
 int f=front,r=rear;
@@ -72,6 +75,7 @@ printf("%d \n",que[f]);
 }
 return;
 }
+//function to search
 int search(int item)
 {
 int f=front,r=rear;
